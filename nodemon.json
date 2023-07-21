@@ -1,0 +1,6 @@
+{
+  "watch": ["src"],
+  "ext": "ts,js,mjs,cjs,json",
+  "ignore": [],
+  "exec": "npx ts-node ./src/index.ts"
+}

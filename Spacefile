@@ -1,0 +1,14 @@
+# Spacefile Docs: https://go.deta.dev/docs/spacefile/v0
+v: 0
+micros:
+  - name: shory
+    src: .
+    engine: nodejs16
+    primary: true
+    commands:
+      - npm run build
+    include:
+      - dist
+      - node_modules
+    run: node dist/index.js
+    dev: npm run dev
