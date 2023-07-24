@@ -9,9 +9,9 @@ const port = process.env.PORT || 3000;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 
-// app.listen(port, () => {
-//   console.log(`Server started on PORT:${port}`);
-// });
+app.listen(port, () => {
+  console.log(`Server started on PORT:${port}`);
+});
 
 app.get("/test", ShopListController);
 
